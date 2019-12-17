@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_person"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="Suhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textStyle="italic"
+                android:text="suhan@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="8549658458"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <Button
+            style="@style/btn_style"
+            android:id="@+id/editstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Edit"/>
+
+        <Button
+            android:id="@+id/deletestudent"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editstudent"
+            android:layout_marginTop="20dp"
+            android:text="Delete" />
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

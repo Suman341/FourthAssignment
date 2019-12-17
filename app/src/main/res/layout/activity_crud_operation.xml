@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrudActivity" android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="@color/green"
+        />
+
+    <EditText
+        android:id="@+id/stname"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"/>
+
+
+    <EditText
+        android:id="@+id/stemail"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"/>
+
+
+    <EditText
+        android:id="@+id/stphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Your Phone"/>
+
+    <Button
+        style="@style/btn_style"
+        android:id="@+id/btnStSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+
+    <Button
+        style="@style/btn_style"
+        android:id="@+id/btnAllStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Students"/>
+
+
+</LinearLayout>

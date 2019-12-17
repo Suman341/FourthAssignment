@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEVEL"
+        android:gravity="center"
+        android:id="@+id/lText"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/lText"
+        android:id="@+id/editText"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_below="@id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btn"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/btnOK"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"/>
+
+        <Button
+            android:id="@+id/btnClr"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="CLear"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/editText"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
